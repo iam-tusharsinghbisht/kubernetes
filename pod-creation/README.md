@@ -66,8 +66,9 @@ $ curl ip
 ```
 
 ## "For successfull execution you will see a nginx page."
+ - "Thank you for using nginx
 
-9) Delet the pod:
+9) Lastly Delete the pod:
 ```
 $ kubectl delete pod nginx
 ``` 
