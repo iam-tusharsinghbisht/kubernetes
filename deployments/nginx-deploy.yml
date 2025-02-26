@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: nginx
   labels:
     app.kubernetes.io/name: nginx-deployment
 spec:
@@ -19,5 +18,12 @@ spec:
         - name: nginx
           image: nginx:latest
           imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: 100M
+              memory: 128M
+            limits:
+              cpu: 200M
+              memory: 256Mi
           ports:
             - containerPort: 80
