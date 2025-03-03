@@ -1,0 +1,9 @@
+apiVersion: crd.com/v1
+kind: DevopsPractice
+metadata:
+  name: practice-set-1
+spec:
+  name: Practice Set 1
+  duration: 3hrs
+  platform: local
+  mode: hand-on
